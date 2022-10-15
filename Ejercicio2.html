@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Orden de menu</title>
+    <link href="css/ejemplo2.css" rel="stylesheet">
+    <script src="js/ejemplo2.js"></script>
+</head>
+
+<body>
+    <h1>ORDEN DE POLLO</h1>
+    <div id="formulario">
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Combos y productos</legend>
+                <div>
+                    <h4>Combos:</h4>
+                    <input type="radio" name="Super" id="super" onclick="precio()" >Super combo
+                    <input type="radio" name="personal" id="personal" onclick="precio1()">Combo
+                    Personal
+                    <input type="radio" name="infantil" id="infantil" onclick="precio2()">Combo
+                    infantil
+                </div>
+                <div>
+                    <h4>Productos:</h4>
+                    <input type="checkbox" name="ensalada" id="ensalada" onclick="precio3()">Ensalada
+                    <input type="checkbox" name="papas" id="papas" onclick="precio4()">Papas fritas
+                    <input type="checkbox" name="pg" id="pollog" onclick="precio5()">Pieza de pollo grande
+                    <input type="checkbox" name="pm" id="pollom" onclick="precio6()">Pieza de pollo mediana
+                    <input type="checkbox" name="pp"  id="pollop" onclick="precio7()">Pieza de pollo pequeña
+                    <input type="checkbox" name="bg"  id="bebidag" onclick="precio8()">Bebida grande
+                    <input type="checkbox" name="bme" id="bebidam" onclick="precio9()">Bebida mediada
+                    <input type="checkbox" name="bpe" id="bebidap" onclick="precio10()">Bebida pequeña
+                    <input type="checkbox" name="cafe" id="cafe" onclick="precio11()">Cafe
+                    <input type="checkbox" name="postre" id="postre" onclick="precio12()">Postre
+                </div>
+                <div>
+                    <h4>Sugerencias</h4>
+                    <p>Instrucciones: CTRL + E: para editar. CTRL + S: guardar la sugerencia ingresada
+                    </p>
+                    <div id="view"></div>
+                    <textarea name="message" class="form-control" id="area" value="mensaje" id="mensage"></textarea>
+                </div>
+                <br>
+            </fieldset>
+        </form>
+        <fieldset id="total">
+            <legend>Total</legend>
+            <div>
+                <p>Total a pagar:</p>
+                <div id="totalprecios"></div>
+            </div>
+            <br>
+            <div><input type="submit" id="enviar" onclick="enviar()"></div>
+            <br>
+            <div id="respuesta"></div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
